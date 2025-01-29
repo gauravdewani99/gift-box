@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 
 const images = [
   "/lovable-uploads/d30ab856-5ac8-4c8f-b240-2258277b06a1.png",
@@ -19,7 +19,7 @@ const ImageSlideshow = () => {
   useEffect(() => {
     const shuffleImages = () => {
       const shuffled = [...images].sort(() => Math.random() - 0.5);
-      setCurrentImages(shuffled.slice(0, 5));
+      setCurrentImages(shuffled.slice(0, 3)); // Changed from 5 to 3
     };
 
     shuffleImages();
@@ -28,7 +28,7 @@ const ImageSlideshow = () => {
   }, []);
 
   return (
-    <div className="grid grid-cols-5 gap-4 mt-8">
+    <div className="grid grid-cols-3 gap-4 mt-8"> {/* Changed from grid-cols-5 to grid-cols-3 */}
       {currentImages.map((image, index) => (
         <motion.div
           key={`${image}-${index}`}
