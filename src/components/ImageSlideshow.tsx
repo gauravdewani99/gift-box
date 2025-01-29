@@ -29,24 +29,22 @@ const ImageSlideshow = () => {
 
   return (
     <div className="grid grid-cols-5 gap-4 mt-8">
-      <AnimatePresence mode="wait">
-        {currentImages.map((image, index) => (
-          <motion.div
-            key={image}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.5 }}
-            className="aspect-square rounded-lg overflow-hidden"
-          >
-            <img
-              src={image}
-              alt={`Slideshow ${index + 1}`}
-              className="w-full h-full object-cover"
-            />
-          </motion.div>
-        ))}
-      </AnimatePresence>
+      {currentImages.map((image, index) => (
+        <motion.div
+          key={`${image}-${index}`}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.5 }}
+          className="aspect-square rounded-lg overflow-hidden"
+        >
+          <img
+            src={image}
+            alt={`Slideshow ${index + 1}`}
+            className="w-full h-full object-cover"
+          />
+        </motion.div>
+      ))}
     </div>
   );
 };

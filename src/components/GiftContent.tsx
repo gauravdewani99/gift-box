@@ -14,7 +14,7 @@ const GiftContent = ({ type, onBack }: GiftContentProps) => {
             <p className="mb-4 text-lg">
               Click{" "}
               <a
-                href="https://drive.google.com/drive/home?dmr=1&ec=wgc-drive-hero-goto"
+                href="https://drive.google.com/file/d/119oRSW3CmAgyfSqkGHqnI5cUhAZ8-Xrs/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-blue-500 hover:text-blue-700 underline"
