@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { motion } from "framer-motion";
 import GiftBox from "@/components/GiftBox";
@@ -33,14 +34,15 @@ const Index = () => {
       <motion.h1
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
-        className="text-4xl md:text-6xl font-bold text-center mb-8 text-purple-800"
+        className="text-3xl md:text-5xl font-bold text-center mb-8 text-maroon-800"
+        style={{ color: "#800000" }} // Maroon color
       >
         Happy Birthday Pranav! 🎈🎉
       </motion.h1>
 
       {!showSmallGifts ? (
         <div className="flex justify-center">
-          <GiftBox onClick={handleMainGiftClick} title="Open Me!" large />
+          <GiftBox onClick={handleMainGiftClick} title="Open Me!" large showAppTitle />
         </div>
       ) : (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-4xl mx-auto">
