@@ -19,7 +19,7 @@ const GiftBox = ({ onClick, title, large = false, showAppTitle = false }: GiftBo
       onClick={onClick}
     >
       {showAppTitle && (
-        <p className="text-lg font-bold mb-1" style={{ color: "#800000" }}>
+        <p className="text-xl font-bold mb-2" style={{ color: "#800000" }}>
           Gift.Box
         </p>
       )}
