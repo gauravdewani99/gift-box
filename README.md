@@ -1,8 +1,10 @@
-# Welcome to your Lovable project
+# Welcome to your Gift.Box
 
 ## Project info
 
-**URL**: https://lovable.dev/projects/d23263af-cb0c-49d5-94f1-315b601582c9
+Gift.Box is an interactive gift, consisting of personalized NYTimes crossword puzzles, that I created for my best friend's birthday.
+
+**URL**: https://birthday-gift-fling.lovable.app/
 
 ## How can I edit this code?
 
